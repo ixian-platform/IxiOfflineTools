@@ -1,6 +1,7 @@
 ﻿using IXICore;
 using IXICore.Meta;
 using IXICore.Network;
+using IXICore.RegNames;
 using IXICore.Utils;
 using IxiOfflineTools.Meta;
 using System;
@@ -175,7 +176,17 @@ namespace IxiOfflineTools
         {
         }
 
-        public override IxiNumber getMinSignerPowDifficulty(ulong blockNum)
+        public override IxiNumber getMinSignerPowDifficulty(ulong blockNum, long curBlockTimestamp)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override byte[] getBlockHash(ulong blockNum)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override RegisteredNameRecord getRegName(byte[] name, bool useAbsoluteId)
         {
             throw new NotImplementedException();
         }
