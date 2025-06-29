@@ -5,6 +5,7 @@ using IXICore.RegNames;
 using IXICore.Utils;
 using IxiOfflineTools.Meta;
 using System;
+using System.Collections.Generic;
 
 namespace IxiOfflineTools
 {
@@ -147,7 +148,7 @@ namespace IxiOfflineTools
             throw new NotImplementedException();
         }
 
-        public override bool addTransaction(Transaction tx, bool force_broadcast)
+        public override bool addTransaction(Transaction tx, List<Address> relayNodeAddresses, bool force_broadcast)
         {
             throw new NotImplementedException();
         }
@@ -176,7 +177,7 @@ namespace IxiOfflineTools
         {
         }
 
-        public override IxiNumber getMinSignerPowDifficulty(ulong blockNum, long curBlockTimestamp)
+        public override IxiNumber getMinSignerPowDifficulty(ulong blockNum, int curBlockVersion, long curBlockTimestamp)
         {
             throw new NotImplementedException();
         }
