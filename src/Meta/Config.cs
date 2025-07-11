@@ -2,6 +2,6 @@
 {
     class Config
     {
-        public static readonly string version = "xot-0.9.4";
+        public static readonly string version = "xot-0.9.5";
     }
 }
